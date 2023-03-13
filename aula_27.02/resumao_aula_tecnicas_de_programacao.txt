@@ -15,9 +15,11 @@ digite: git init
 para adicionar o controle de versão
 
 após executar este comando ao lado da pasta estará com uma marcação "(master)" indicando que o comando foi executado com sucesso
+e que a sua branch atual é a master.
 
 agora qualquer arquivo ou pasta que forem adicionados à pasta do master, poderão ser adicionadas à uma nova versão
 para adicionar à uma nova versão é necessario executar alguns comandos...
+
 
 adicionar arquivo à nova versão:
 - git add <file.extensao> | adiciona o arquivo mencionado
@@ -39,14 +41,16 @@ git reset --hard <id commit> - volta para o commit atraves do id
 git reset --hard head~1 (ou, ~2, etc) - volta para o commit anterior ou o anterior do anterior etc...
 
 
+
 adicionar repositorio no github:
 crie um repositorio no github, basta acessar seu perfil ir em repositories e clicar em new
 agora dê um nome ao seu repositorio, e, se quiser, adicione uma descrição e/ou faça outras configurações...
 
 Após criar um repositorio no github será mostrado uma sequencia de comandos, basta copia-los e cola-los:
 git remote add origin <link do repositorio>    | vincula com o repositorio remoto
-git branch -M main                             | cria uma nova ramificação
+git branch -M main                             | muda a branch para 'main'
 git push -u origin main                        | commits são enviados para o github
+
 
 
 caso não tenha a conta do github vinculada no user e não queira vincular por algum motivo, pode-se utilizar um Token
