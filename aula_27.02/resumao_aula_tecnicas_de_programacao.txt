@@ -1,0 +1,61 @@
+Antes de mais nada é necessario ter algumas configurações no git...
+
+fazer a instalação do git - dica: definir o main como principal na instalação
+
+configurar autor e email:
+git config --global user.name "seu nome" - configura o nome do utilizador | pode ser alterado à qualquer momento
+git config --global user.email "seu email" - configura o email do utilizador | pode ser alterado à qualquer momento
+
+...
+
+acessar a pasta pelo terminal da maquina ou git bash, obs: o git bash só é utilizado no windows
+
+estando dentro da pasta no terminal é necessário gerar o controle de versão
+digite: git init
+para adicionar o controle de versão
+
+após executar este comando ao lado da pasta estará com uma marcação "(master)" indicando que o comando foi executado com sucesso
+
+agora qualquer arquivo ou pasta que forem adicionados à pasta do master, poderão ser adicionadas à uma nova versão
+para adicionar à uma nova versão é necessario executar alguns comandos...
+
+adicionar arquivo à nova versão:
+- git add <file.extensao> | adiciona o arquivo mencionado
+ou
+- git add .               | adiciona todos os arquivos dentro da pasta 
+
+para saber se as alterações foram feitas
+digite: git status        | mostra os status dos arquivos
+
+para criar uma nova versão execute:
+git commit -m "nota sobre a nova versão" | -m é usado para adicionar um comentario de sua preferencia
+
+é possivel ver um historico de todos os commits feitos 
+usando: git log           | ao executar mostrará diversas informações como: data do commit, autor, id do commit, etc
+
+
+caso queira voltar à um commit
+git reset --hard <id commit> - volta para o commit atraves do id 
+git reset --hard head~1 (ou, ~2, etc) - volta para o commit anterior ou o anterior do anterior etc...
+
+
+adicionar repositorio no github:
+crie um repositorio no github, basta acessar seu perfil ir em repositories e clicar em new
+agora dê um nome ao seu repositorio, e, se quiser, adicione uma descrição e/ou faça outras configurações...
+
+Após criar um repositorio no github será mostrado uma sequencia de comandos, basta copia-los e cola-los:
+git remote add origin <link do repositorio>    | vincula com o repositorio remoto
+git branch -M main                             | cria uma nova ramificação
+git push -u origin main                        | commits são enviados para o github
+
+
+caso não tenha a conta do github vinculada no user e não queira vincular por algum motivo, pode-se utilizar um Token
+para criar um novo token acesse o site do github e vá em:
+settings > developer settings > personal access tokens > tokens (classic)
+nesta tela será exibidos os token que você já tem criados
+clique em "generate new token" para criar um novo token
+
+após criar o token, na sua tela mostrará a senha do token (obs: esta senha só aparece uma vez, por isso, salve a)
+os tokens podem ser utilizados até a data de expiração que lhe foi definida
+
+é isso, após autenticar a conta ou usar a senha do token, seu projeto já estará em seu respectivo repositorio
