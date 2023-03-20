@@ -14,7 +14,7 @@ function calcularIMC(peso, altura){
 
     classificarIMC(imc)
     
-    document.getElementById("res").innerHTML = imc
+    document.getElementById("res").innerHTML = imc.toFixed(2)
 
 }
 
