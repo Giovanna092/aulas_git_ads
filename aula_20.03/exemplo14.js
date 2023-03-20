@@ -8,7 +8,7 @@ class Livro {
     set Nome(pNome){this.nome = pNome}
     
     get Preco(){return this.preco}
-    set Nome(pPreco){this.preco = pPreco}
+    set Preco(pPreco){this.preco = pPreco}
 
     calcularDesconto(){
         this.preco = this.preco - 10
