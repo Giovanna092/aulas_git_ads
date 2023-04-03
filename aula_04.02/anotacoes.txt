@@ -1,5 +1,0 @@
-terminal:
-npm init 
-npm install
-npm install nodemon
-o nodemon é uma biblioteca que ajuda no desenvolvimento de sistemas com o Node.js reiniciando automaticamente o servidor.
