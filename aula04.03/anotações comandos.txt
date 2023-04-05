@@ -1,0 +1,18 @@
+comandos básicos npm:
+iniciar projeto                    -> npm init 
+instalar dependencias no projeto   -> npm install express && npm nodemon --save-dev
+iniciar servidor                   -> npm start 
+instalar extensão dotenv           -> npm install dotenv
+
+arquivo de configuração de variaveis do projeto: 
+variables.env -> necessario instalar a extensão dotenv
+         
+
+arquivo da aplicação:
+App.js 
+
+arquivo do servidor: 
+Server.js 
+
+ao iniciar o servidor atraves do comando npm start, é possivel acessar o app no navegador
+localhost:<porta>
