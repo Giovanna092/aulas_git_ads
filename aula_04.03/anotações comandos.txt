@@ -16,3 +16,46 @@ Server.js
 
 ao iniciar o servidor atraves do comando npm start, é possivel acessar o app no navegador
 localhost:<porta>
+
+
+atualizacoes aula 10/04 
+
+mudança no router
+const router = express.Router()
+router.get('/', (req, res)=>{
+    res.send('Olá!'+req.query.nome) //mensagem exibida na pag web
+})
+
+req -> variavel de requisição
+query.nome -> é usado para pegar o que esta na variavel nome passado pela URI do site
+
+req.query.idade -> mesma logica puxa a requisição com os valores
+informados atraves do URI do site
+
+as variaveis ficam definidas como, por exemplo:
+urisite/?variavel=valor&variavel2=valor2
+
+
+mudança no app
+app.use(express.json()) -> trata requisicoes POST como se fossem GET
+
+adicionando nova rota
+obs: os  :  indica que entrara algum valor no endereco
+router.get('/posts/:id',(req,res)=>{
+    let id = req.params.id
+    res.send('')   
+})
+essa linha de codigo permite que seja inserido um id na URI do site e esse valor
+fica armazenado na variavel ID
+
+
+transformando em json
+    res.json({
+        nomeCompleto: nome+ ' '+ sobrenome
+    })
+definimos um json e as variaveis são informadas na uri 
+
+
+//tudo que vier na query transformara em json
+    res.json(req.query)
+json feito automatico
