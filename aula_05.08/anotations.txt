@@ -1,0 +1,23 @@
+npm init -y
+cria o projeto sem precisar das confirmações
+
+npm install express mysql dotenv cors body-parser
+instala packages e dependencias
+mysql - dependencia do mysql 
+dotenv - dependencia dos arquivos das variaveis de ambiente
+cors - dependencia de controle da segurança da api
+body-parser - dependencia utilizada para fazer analise nas requisições HTTP
+
+npm install nodemon --save-dev
+instala o nodemon como dependencias dev
+
+
+process.env.VAR - acessar variavel dentro do arquivo .env
+
+
+criar banco de dados no mysql
+criar conexão (pode aparecer um erro)
+
+no command line client do mysql
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'root';
+usado para corrigir o erro de conexão com o banco de dados
